@@ -1,0 +1,1098 @@
+
+    <!-------CREATE--BY--Asif--muhammed----developer-->
+         <!--------movie---website---->
+   
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moveflix.com</title>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-------- style--css------>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!----------- swiper--------->
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-----------font--awesome----------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+
+  <header>
+    <div class="mobile-menu-toggle">   <!--------- hambuger--menu----------->
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="logo">   <!----------logo----------->
+      Movieflix
+    </div>
+   
+
+    <!----------desktop----------view------------>
+    <nav>
+
+     
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Series</a></li>
+        <li class="dropdown">
+          <a href="#">My List <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Item </a></li>
+            <li><a href="#">Item </a></li>
+            <li><a href="#">Item </a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <li>
+          <div class="search-bar" >
+            <input type="text" placeholder="Search">
+            <button type="submit">Search</button>
+          </div>
+        </li>
+      </ul>
+    </nav>
+   
+
+   
+        <a href="#" id="searchIcon"><i class="fas fa-search"></i></a>
+      
+      
+
+   
+  </header>
+
+<!-------------sidebar--------------->
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        Movieflix
+      </div>
+      <span class="close-icon">&times;</span>
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="#"> <i class="fas fa-home"></i>Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">
+          <i class="fas fa-film"></i> Movies <i class="fas fa-caret-down"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#"><i class="fas fa-fist-raised"></i> Action</a></li>
+          <li><a href="#"><i class="far fa-laugh"></i> Comedy</a></li>
+          <li><a href="#"><i class="fas fa-theater-masks"></i> Drama</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">
+          <i class="fas fa-tv"></i> Series <i class="fas fa-caret-down"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#"><i class="fas fa-bolt"></i> Thriller</a></li>
+          <li><a href="#"><i class="fas fa-rocket"></i> Sci-Fi</a></li>
+          <li><a href="#"><i class="fas fa-dragon"></i> Fantasy</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" ><i class="fas fa-user-circle"></i>About us </a>
+       
+      </li>
+      <li class="dropdown">
+        <a href="proflie page/proflie.html" ><i class="fas fa-user-plus"></i> Proflie </a>
+       
+      </li>
+    </ul>
+
+     <div class="social-icons2">
+     
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+  </div>
+      <div class="created-by">
+    Created by Asif.Mhd &copy; 2023
+  </div>
+  </aside>
+
+  <!-- Rest of your webs
+
+
+
+
+
+
+ 
+<------------ slide---banner------------->
+
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide">
+      <a href="">  <img src="https://assets.mspimages.in/gear/wp-content/uploads/2023/05/Pachuvum-Athbutha-Vilakkum.jpg" alt="Movie 1"></a>
+        <div class="slide-content">
+          <h3> Pachuvum Athbutha villakum</h3>
+          
+          
+         
+        </div>
+      </div>
+
+
+      <div class="slide">
+       <a href=""> <img src=" https://bingeddata.s3.amazonaws.com/uploads/2020/08/Project-Power-Review.jpg" alt="Movie 2"></a>
+        <div class="slide-content">
+          <h3>Project Power</h3>
+        
+        </div>
+      </div>
+
+      
+      <div class="slide">
+       <a href=""> <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/0976DC7B1F2A751375909D2055D087BD9A8D752921DB2F8711E17FB1F4E7C2C5/scale?width=1200&aspectRatio=1.78&format=jpeg" alt="Movie 3"></a>
+        <div class="slide-content">
+          <h3>Marvel secert invasion</h3>
+          
+         
+        </div>
+      </div>
+
+
+      
+      <div class="slide">
+        <a href=""><img src=" https://m.media-amazon.com/images/M/MV5BN2Q2ZjY4NTctNDAzNy00YjM2LTkwNDItNmYyOTE4NGQzMzBhXkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_.jpg" alt="Movie 2"></a>
+        <div class="slide-content">
+          <h3>Mukundan Unni Associates</h3>
+        
+        </div>
+      </div>
+
+
+      <div class="slide">
+        <a href=""><img src="https://www.socialsamosa.com/wp-content/uploads/2022/11/1-1.jpg" alt="Movie 3"></a>
+        <div class="slide-content">
+          <h3>Bhediya</h3>
+         
+        </div>
+      </div>
+
+      
+      <div class="slide">
+       <a href=""> <img src=" https://assets-in.bmscdn.com/discovery-catalog/events/et00358141-trjgnjbxfg-landscape.jpg" alt="Movie 3"></a>
+        <div class="slide-content">
+          <h3>Anuragam</h3>
+          
+         
+        </div>
+      </div>
+
+      <!-- Add more slides here -->
+    </div>
+  </div>
+  
+  
+<div class="slide-indicators">
+  <span class="indicator active"></span>
+  <span class="indicator"></span>
+  <span class="indicator"></span>
+  <span class="indicator"></span>
+  <span class="indicator"></span>
+  <span class="indicator"></span>
+  <!-- Add more indicators for each slide -->
+</div>
+
+  <!--------------- slides-----end--here---------->
+ 
+
+  <div class="category-section">
+   
+    <div class="category-slider">
+      <button class="category-btn"> <i class="fas fa-fist-raised"></i>Action</button>
+      <button class="category-btn"> <i class="far fa-laugh"></i>Comedy</button>
+      <button class="category-btn"><i class="fas fa-heart"></i>Romantic</button>
+      <button class="category-btn"><i class="fas fa-bolt"></i>Thriller</button>
+      <button class="category-btn"><i class="fas fa-rocket"></i>Sci-fci</button>
+      <button class="category-btn"><i class="fas fa-dragon"></i>Fantasy</button>
+    </div>
+  </div>
+  
+
+<!----------------movie--card-- start-->
+
+<div class="section-title">
+  <h2>Molloywood Movies</h2>
+</div>
+<div class="container">
+  <div class="card-container">
+    <a href="page.html"><img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/anuragam-et00358141-1683015224.jpg" alt="Movie Poster"></a>
+    <div class="card-details">
+      <h3>Anuragam</h3><span class="new">New</span>
+      <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+      <p class="movie-category"><i class="fas fa-film"></i> Romantic. Comdey</p>
+      <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+      <div class="rating">
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+       
+      </div>
+    </div>
+    <div class="quality-icons">
+      <img src="asset/icons/icons8-hd-96(1).png" alt="4K Icon">
+     
+    </div>
+  </div>
+
+  <div class="card-container">
+    <img src="https://assets.voxcinemas.com/posters/P_HO00010200.jpg" alt="Movie Poster">
+    <div class="card-details">
+      <h3>Pachuvum Athbutha Vilakkum</h3><span class="new">New</span>
+      <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+      <p class="movie-category"><i class="fas fa-film"></i> Drama. Romatic </p>
+      <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+      <div class="rating">
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+      </div>
+    </div>
+    <div class="quality-icons">
+      <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+     
+    </div>
+  </div>
+  
+  <div class="card-container">
+    <img src=" https://image.tmdb.org/t/p/w1280/btiXIEX5AOYqmWr07H5KdDG33W.jpg" alt="Movie Poster">
+    <div class="card-details">
+      <h3>Mukundan Unni Associates</h3>
+      <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+      <p class="movie-category"><i class="fas fa-film"></i> Drama / Comdey </p>
+      <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+      <p class="movie-time"><i class="far fa-flag"></i> Langauage : Malayalam</p>
+      <div class="rating">
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        
+      </div>
+    </div>
+    <div class="quality-icons">
+      <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+    </div>
+  </div>
+
+  <div class="card-container">
+    <img src="https://filmfare.wwmindia.com/content/2022/dec/pathaan11669878737.jpg" alt="Movie Poster">
+    <div class="card-details">
+      <h3>Pattan</h3>
+      <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+      <p class="movie-category"><i class="fas fa-film"></i> Drama . Sci-feic .Comdey </p>
+      <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+      <div class="rating">
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+      </div>
+    </div>
+    <div class="quality-icons">
+      <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+    </div>
+  </div>
+
+
+
+
+  <div class="card-container">
+    <img src="https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg" alt="Movie Poster">
+    <div class="card-details">
+      <h3>Gaurdians of Galaxy : 3</h3><span class="new">New</span>
+      <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+      <p class="movie-category"><i class="fas fa-film"></i> Drama . Sci-feic .Comdey </p>
+      <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+      <div class="rating">
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+      </div>
+    </div>
+    <div class="quality-icons">
+      <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+    </div>
+  </div>
+
+
+
+  <div class="card-container">
+    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00357072-ghlkvxmcjy-portrait.jpg" alt="Movie Poster">
+    <div class="card-details">
+      <h3>2018</h3><span class="new">New</span>
+      <p class="movie-date"><i class="far fa-calendar-alt"></i> Release Date:  2023</p>
+      <p class="movie-category"><i class="fas fa-film"></i> Horror - Romantic.</p>
+      <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+      <div class="rating">
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        
+      </div>
+    </div>
+    <div class="quality-icons">
+      <img  src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+    </div>
+  </div>
+
+
+  <div class="card-container">
+    <img src="https://bingeddata.s3.amazonaws.com/uploads/2023/04/Citadel_Series_Review.jpg" alt="Movie Poster">
+    <div class="card-details">
+      <h3>Citadal</h3><span class="new">New</span>
+      <p class="movie-date"><i class="far fa-calendar-alt"></i> Release Date:  2023</p>
+      <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+      <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+      <div class="rating">
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+      </div>
+    </div>
+    <div class="quality-icons">
+      <img src="asset/icons/icons8-hd-96.png" alt="4K Icon">
+    </div>
+  </div>
+
+
+  <div class="card-container">
+    <img src="https://pbs.twimg.com/media/Fe33qakWAAE3pMO.jpg:large" alt="Movie Poster">
+    <div class="card-details">
+      <h3>monster</h3>
+      <p class="movie-date"><i class="far fa-calendar-alt"></i> Release Date:  2023</p>
+      <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+      <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+      <div class="rating">
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+      </div>
+    </div>
+    <div class="quality-icons">
+      <img src="asset/icons/icons8-hd-96.png" alt="4K Icon">
+    </div>
+  </div>
+
+
+  <div class="card-container">
+    <img src=" https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/nna-thaan-case-kodu-et00324663-1659515898.jpg" alt="Movie Poster">
+    <div class="card-details">
+      <h3>Enna thann case kodu</h3>
+      <p class="movie-date"><i class="far fa-calendar-alt"></i> Release Date:  2023</p>
+      <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+      <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+      <div class="rating">
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+        <span>&#9733;</span>
+      </div>
+    </div>
+    <div class="quality-icons">
+      <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+    </div>
+  </div>
+  <!-- Add more card-container elements as needed -->
+</div>
+
+
+
+
+
+
+
+  <div class="section-title">
+    <h2>Popular Movies</h2>
+  </div>
+  <div class="container">
+    <div class="card-container">
+      <a href=""><img src="https://pbs.twimg.com/media/FfWgmp0agAAZ7Bx?format=jpg&name=large" alt="Movie Poster"></a>
+      <div class="card-details">
+        <h3>Bhedhiya</h3><span class="new">New</span>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+       
+      </div>
+    </div>
+
+    <div class="card-container">
+      <img src="https://myhotposters.com/cdn/shop/products/mL4567_1024x1024.jpg?v=1596632169" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Project Power</h3><span class="new">New</span>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Sci-fic,Thriller</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+       
+      </div>
+    </div>
+    
+    <div class="card-container">
+      <img src=" https://image.tmdb.org/t/p/w1280/btiXIEX5AOYqmWr07H5KdDG33W.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Mukundan Unni Associates</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Drama  .Comdey </p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <p class="movie-time"><i class="far fa-globe"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+      </div>
+    </div>
+
+    <div class="card-container">
+      <img src="https://filmfare.wwmindia.com/content/2022/dec/pathaan11669878737.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Pattan</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Drama . Sci-feic .Comdey </p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+      </div>
+    </div>
+
+
+
+
+    <div class="card-container">
+      <img src="https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Gaurdians of Galaxy : 3</h3><span class="new">New</span>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Drama . Sci-feic .Comdey </p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+      </div>
+    </div>
+
+
+
+    <div class="card-container">
+      <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00357072-ghlkvxmcjy-portrait.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>2018</h3><span class="new">New</span>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i> Release Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Horror - Romantic.</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img  src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+      </div>
+    </div>
+
+
+    <div class="card-container">
+      <img src="https://bingeddata.s3.amazonaws.com/uploads/2023/04/Citadel_Series_Review.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Citadal</h3><span class="new">New</span>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i> Release Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/icons8-hd-96.png" alt="4K Icon">
+      </div>
+    </div>
+
+
+    <div class="card-container">
+      <img src="https://pbs.twimg.com/media/Fe33qakWAAE3pMO.jpg:large" alt="Movie Poster">
+      <div class="card-details">
+        <h3>monster</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i> Release Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/icons8-hd-96.png" alt="4K Icon">
+      </div>
+    </div>
+
+
+    <div class="card-container">
+      <img src=" https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/nna-thaan-case-kodu-et00324663-1659515898.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Enna thann case kodu</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i> Release Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+      </div>
+    </div>
+    <!-- Add more card-container elements as needed -->
+  </div>
+
+
+
+
+
+
+
+
+  <div class="section-title">
+    <h2>Top Rated </h2>
+  </div>
+  <div class="container">
+    <h2>Popular Movies</h2>
+    <div class="card-container">
+      <img src="https://www.joblo.com/wp-content/uploads/2021/10/black-widow-disney-plus-poster-692x1024.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Black Widow</h3><span class="new">New</span>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i>Sci-fic -Action</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+       
+      </div>
+    </div>
+    <div class="card-container">
+      <img src="https://i.ebayimg.com/images/g/eUsAAOSwe1JjUQSK/s-l1600.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Black Adam</h3><span class="new">New</span>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Drama . Sci-fic .Comdey </p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+      </div>
+    </div>
+
+
+
+    <div class="card-container">
+      <img src="https://www.scrolldroll.com/wp-content/uploads/2022/05/Raw-Beast-Best-Hindi-Dubbed-South-Indian-Movies-of-2022.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Beast</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Horror - Romantic.</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img  src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+      </div>
+    </div>
+
+
+    <div class="card-container">
+      <img src="https://bingeddata.s3.amazonaws.com/uploads/2023/04/Citadel_Series_Review.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Movie Title 2</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/icons8-hd-96.png" alt="4K Icon">
+      </div>
+    </div>
+
+
+    <div class="card-container">
+      <img src="https://pbs.twimg.com/media/FfWgmp0agAAZ7Bx?format=jpg&name=large" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Movie Title 2</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/icons8-hd-96.png" alt="4K Icon">
+      </div>
+    </div>
+
+
+    <div class="card-container">
+      <img src=" https://bingeddata.s3.amazonaws.com/uploads/2023/04/Citadel_Series_Review.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Movie Title 2</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+      </div>
+    </div>
+    <!-- Add more card-container elements as needed -->
+  </div>
+
+
+
+
+
+
+
+  <div class="section-title">
+   
+    <h2>Netflix Series</h2>
+  
+  </div>
+  <div class="container">
+    <div class="card-container">
+      <img src="https://myhotposters.com/cdn/shop/products/mL4567_1024x1024.jpg?v=1596632169" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Project Power</h3><span class="new">New</span>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i> Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Sci-fci - action</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+       
+      </div>
+    </div>
+    <div class="card-container">
+      <img src="https://c4.wallpaperflare.com/wallpaper/449/429/294/stranger-things-netflix-poster-wallpaper-preview.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Strange Things</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Drama . Sci-feic .Horror </p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+      </div>
+    </div>
+
+
+
+    <div class="card-container">
+      <img src="https://c4.wallpaperflare.com/wallpaper/462/216/45/movies-dark-wednesday-addams-wednesday-tv-series-movie-poster-hd-wallpaper-preview.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Movie Title 2</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Horror - Romantic.</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img  src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+      </div>
+    </div>
+
+
+    <div class="card-container">
+      <img src="https://m.media-amazon.com/images/M/MV5BOTY1MzI2MzctYjc0Zi00N2EyLWJhYjItOTE5ZDk4N2Q1NDkxXkEyXkFqcGdeQXVyMTIzODE4Mzcy._V1_FMjpg_UX1000_.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Movie Title 2</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i> Release Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/icons8-hd-96.png" alt="4K Icon">
+      </div>
+    </div>
+
+
+    <div class="card-container">
+      <img src=" data:image/jpeg;base64,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" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Movie Title 2</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i> Release Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/icons8-hd-96.png" alt="4K Icon">
+      </div>
+    </div>
+
+
+    <div class="card-container">
+      <img src=" https://m.media-amazon.com/images/M/MV5BYWE3MDVkN2EtNjQ5MS00ZDQ4LTliNzYtMjc2YWMzMDEwMTA3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Movie Title 2</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i>  Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+      </div>
+    </div>
+    <!-- Add more card-container elements as needed -->
+  </div>
+
+<!------------ subcribe---input--section---------->
+
+  <section id="subscribe-section">
+    <h2 class="sub3">Subscribe to our Premeium </h2>
+    <form id="subscribe-form">
+      <input type="email" id="email-input" placeholder="Enter your email address" required>
+      <button type="submit" id="subscribe-button">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Netflix-style modal -->
+  <div id="success-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Submit successful!</p>
+    </div>
+  </div>
+
+
+<!------------------end-------------->
+
+
+  <div class="section-title">
+    <h2>suggested for you</h2>
+  </div>
+  <div class="container">
+    <div class="card-container">
+      <img src="https://pbs.twimg.com/media/FfWgmp0agAAZ7Bx?format=jpg&name=large" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Movie Title 1</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i> Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+       
+      </div>
+    </div>
+    <div class="card-container">
+      <img src="https://image.tmdb.org/t/p/w500/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Movie Title 2</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i> Release Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Drama . Sci-feic .Comdey </p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+      </div>
+    </div>
+
+
+
+    <div class="card-container">
+      <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00357072-ghlkvxmcjy-portrait.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Movie Title 2</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i> Release Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Horror - Romantic.</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img  src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+      </div>
+    </div>
+
+
+    <div class="card-container">
+      <img src="https://bingeddata.s3.amazonaws.com/uploads/2023/04/Citadel_Series_Review.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Movie Title 2</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i> Release Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/icons8-hd-96.png" alt="4K Icon">
+      </div>
+    </div>
+
+
+    <div class="card-container">
+      <img src="https://pbs.twimg.com/media/FfWgmp0agAAZ7Bx?format=jpg&name=large" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Movie Title 2</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i> Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/icons8-hd-96.png" alt="4K Icon">
+      </div>
+    </div>
+
+
+    <div class="card-container">
+      <img src=" https://bingeddata.s3.amazonaws.com/uploads/2023/04/Citadel_Series_Review.jpg" alt="Movie Poster">
+      <div class="card-details">
+        <h3>Movie Title 2</h3>
+        <p class="movie-date"><i class="far fa-calendar-alt"></i> Date:  2023</p>
+        <p class="movie-category"><i class="fas fa-film"></i> Movie Category</p>
+        <p class="movie-time"><i class="far fa-clock"></i> Duration: 2h 30m</p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+      </div>
+      <div class="quality-icons">
+        <img src="asset/icons/4k-label-color-icon.svg" alt="4K Icon">
+      </div>
+    </div>
+    <!-- Add more card-container elements as needed -->
+  </div>
+
+
+
+
+
+
+<!----------footer---section----------->
+
+<footer>
+  <div class="container2">
+    <div class="footer-content">
+      <h1 class="logo3">Movieflix</h1>
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">New Releases</a></li>
+        <li><a href="#">My List</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Moveflix</p>
+      <p>123 Main Street, kerala, India</p>
+      <p>Email: Asif@Movieflix.com</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!--------------end---------------->
+   
+    
+  <!-- Rest of the code -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

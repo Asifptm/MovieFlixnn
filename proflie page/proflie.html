@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="proflie.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <span class="back-icon" id="backIcon"><i class="fas fa-arrow-left"></i></span>
+            <span class="profile-text">Profile</span>
+           <a href="settings/settings.html"> <span class="settings-icon"><i class="fas fa-cog"></i></span></a>
+        </div>
+        <div class="divider"></div>
+
+        <!---------proflie----------start-------->
+
+        <div class="profile-image-container">
+            <img class="profile-image" id="profileImage" src="https://via.placeholder.com/150" alt="Profile Image">
+            <label for="fileInput" class="edit-icon" id="editIcon"><i class="fas fa-pencil-alt"></i></label>
+        </div>
+        <div class="profile-name">
+            <div class="profile-name-container">
+                <div class="editable-text" id="nameContainer">
+                    Your Name
+                    <span class="edit-icon" id="nameEditIcon"><i class="fas fa-pencil-alt"></i></span>
+                </div>
+                <span class="edit-name-icon" id="editNameIcon"><i class="fas fa-user-edit"></i></span>
+            </div>
+            <input type="text" id="nameInput" style="display: none" value="Your Name">
+        </div>
+        <div class="profile-details">
+            <h3>Personal Details</h3>
+            <div class="profile-details-item"><i class="fas fa-birthday-cake"></i><span class="detail-text">Age: 30</span><span class="edit-detail-icon"><i class="fas fa-pencil-alt"></i></span><input type="text" class="detail-input"></div>
+            <div class="profile-details-item"><i class="fas fa-map-marker-alt"></i><span class="detail-text">Location: City, Country</span><span class="edit-detail-icon"><i class="fas fa-pencil-alt"></i></span><input type="text" class="detail-input"></div>
+            <div class="profile-details-item"><i class="fas fa-envelope"></i><span class="detail-text">Email: youremail@example.com</span><span class="edit-detail-icon"><i class="fas fa-pencil-alt"></i></span><input type="text" class="detail-input"></div>
+            <div class="profile-details-item"><i class="fas fa-phone-alt"></i><span class="detail-text">Phone: +123 456 789</span><span class="edit-detail-icon"><i class="fas fa-pencil-alt"></i></span><input type="text" class="detail-input"></div>
+        </div>
+
+     <!-------------------------contact---------------------->
+
+        <div class="profile-social">
+            <h3>Connect with Me</h3>
+            <ul class="social-icons">
+                <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <!-- Add more social media icons as needed -->
+            </ul>
+            <button class="add-link-button" id="add-link-button">Add Links</button>
+
+            <!-- Popup Modal -->
+            <div id="popupModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <label for="facebookLink">Facebook:</label>
+                    <input type="text" id="facebookLink" placeholder="Enter your Facebook link">
+                    <label for="twitterLink">Twitter:</label>
+                    <input type="text" id="twitterLink" placeholder="Enter your Twitter link">
+                    <label for="linkedinLink">LinkedIn:</label>
+                    <input type="text" id="linkedinLink" placeholder="Enter your LinkedIn link">
+                    <label for="instagramLink">Instagram:</label>
+                    <input type="text" id="instagramLink" placeholder="Enter your Instagram link">
+                    <button id="addLinkButton">Add Links</button>
+                </div>
+            </div>
+        </div>
+                 <!----------------closed--------------no-------------------------------->
+
+
+    </div>
+
+    <!-- Hidden input element to trigger file upload for profile image -->
+    <input  class="triger"  type="file" id="fileInput" style="display: none">
+
+    <!--- hiddden---------------template--------------------------------mn-->
+
+
+
+
+
+
+    <script src="proflie.js"></script>
+</body>
+</html>

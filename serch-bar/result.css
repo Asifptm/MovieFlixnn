@@ -1,0 +1,308 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.movie-title {
+  font-size: 28px;
+  margin: 0;
+  margin-left:20px;
+  font-family: "Times New Roman", serif; /* Set another font family for the title */
+}
+
+.rating {
+  font-size: 13px;
+  margin-left:15px;
+   color: #f70b0b; /* Adjust the color of the rating stars */
+  margin-top: 10px;
+ margin-left:5px;
+}
+
+.rating i {
+  margin-right: 5px;
+}
+
+.rating-digit {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.movie-details {
+  margin-top: 20px;
+  margin-left:15px;
+  
+}
+
+.movie-details span {
+  font-size: 14px;
+  margin-right: 10px;
+  padding: 5px 8px;
+   background-color: #141111;
+  color: #f1f1f1;
+  border-radius: 20px;
+}
+
+.movie-details i{
+   margin-right: 5px;
+   color: rgb(243, 10, 10);
+}
+
+
+.movie-description {
+  padding: 20px 0;
+  margin-left:15px;
+  margin-top:20px;
+}
+
+.movie-description h2 {
+  font-size: 20px;
+  margin: 0;
+  padding-left: 20px; /* Added to create space for the pseudo-element */
+  position: relative; /* Added for positioning the pseudo-element */
+}
+
+.movie-description h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: red; /* Adjust the color of the vertical line */
+}
+
+.movie-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.action-icon {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  color: #2d3436; /* Adjust the color of the action icons */
+}
+
+.action-icon i {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.extra-info {
+  margin-top: 30px;
+  display: flex;
+  justify-content: left; /* Center the elements horizontally */
+  flex-wrap: wrap; /* Allow items to wrap into multiple rows */
+  margin-left:15px;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+background-color: red;
+  color: #ffffff; /* Add text color to the download button */
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 5px;
+}
+.download-button:hover{
+   background-color: #0a0707;
+  
+}
+
+.more-info {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6c5ce7; /* Add background color to the more info section */
+  color: #ffffff; /* Add text color to the more info section */
+  border-radius: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 5px;
+}
+.more-info:hover{
+   background-color: #6c5ce7
+}
+
+
+.cast-info {
+  margin-top: 10px;
+  margin-left:10px;
+}
+
+.cast-info h2 {
+  font-size: 20px;
+  margin: 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.cast-info h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: red;
+}
+
+.cast-names {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.cast-names i {
+  margin-right: 5px;
+  margin-left:10px;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 767px) {
+  .banner {
+   display: flex;
+  }
+  
+  .rating{
+    margin-left:10px;
+  }
+  
+  .movie-details span i{
+    font-size:13px;
+  }
+  .movie-title{
+    margin-top:10px;
+    margin-left:10px;
+  }
+
+  
+  .action-icon i {
+  font-size: 25px;
+  margin-left: 10px;
+    
+}
+  .movie-details {
+  margin-top: 20px;
+  margin-left:10px;
+  
+}
+  
+  .movie-details-container {
+    padding: 4px;
+    font-size:14px;
+    position: static; /* Reset the position to static for stacking content */
+    background-color: #ffffff; /* Revert background color to solid white */
+  }
+
+  .movie-title {
+    font-size: 20px;
+  }
+  .movie-details {
+    font-size:12px;
+  }
+
+  .movie-details span {
+    font-size: 14px; /* Reduce font size for mobile */
+  }
+
+  .movie-description h2 {
+    font-size: 18px;
+  }
+
+  .extra-info {
+    flex-direction: column; /* Arrange elements in a single column */
+    align-items: center;/* Center the elements vertically */
+   
+  }
+
+  
+  
+  .movie-details span {
+    font-size:12px;
+  }
+  
+  .download-button,
+  .more-info {
+    font-size: 13px; /* Reduce font size for mobile */
+    padding: 8px 10px; /* Adjust padding for mobile */
+  width:60%;
+    margin-top:10px;
+    margin-right:50px;
+    border-radius: 5px;
+    text-align:center;
+  }
+}
+
+
+.share-popup {
+  display: none;
+  position: absolute;
+  bottom: 120px;
+  right: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 40px 70px;
+  z-index: 1;
+}
+
+.show {
+  display: block;
+}
+
+.popup-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.popup-close i {
+  color: #555;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  display: block;
+  color: #555;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+
+.red-heart {
+  color: red; /* Change the color of the heart icon to red */
+}

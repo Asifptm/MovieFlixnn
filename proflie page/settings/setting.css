@@ -1,0 +1,267 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.205);
+    /* Add position relative to the container */
+    position: relative;
+  }
+
+  .back-icon
+   {
+    font-size: 24px;
+    margin-left: 5px;
+    cursor: pointer;
+   color: #1b1313;
+    padding: 5px  ;
+    border-radius: 50%;
+  }
+
+  .time-container {
+    /* Position the time at the top right corner */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .setting-heading {
+    text-align: center;
+    margin-bottom: 20px;
+   
+  }
+
+  .back-icon {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    margin-top: 5px;
+  }
+  .back-icon:hover {
+    /* Change the color when hovering over the back icon */
+    color: #ff002b; /* Blue color on hover */
+  }
+
+  .setting-heading h2 {
+    font-size: 24px;
+    font-weight: bold;
+    
+  }
+
+  .setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background-color: #f7f6f6;
+    border-radius: 5px;
+    padding: 5px
+    ;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.205);
+    padding: 20px ;
+    margin-top: 10px;
+    border-bottom: 1px solid #bebbbb;
+  }
+
+
+
+  .setting:last-child {
+    border-bottom: none;
+  }
+
+  .setting label {
+    font-weight: bold;
+  }
+
+  /* Style for the toggle switch */
+  .toggle-btn input[type="checkbox"] {
+    display: none;
+  }
+
+  .toggle-btn label {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  /* Custom styles when the toggle is ON */
+  .toggle-btn input[type="checkbox"]:checked + label {
+    background-color: #f50c0c; /* Red color */
+  }
+
+  .toggle-btn label::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.2s;
+  }
+
+  .toggle-btn input[type="checkbox"]:checked + label::after {
+    transform: translateX(20px);
+  }
+
+  /* Additional styles for the Language dropdown */
+  .setting select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #fffcfc;
+    background-color: #d61010;
+    outline: none;
+    appearance: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.205);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Add custom arrow icon */
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+  }
+
+  /* Style options in the dropdown */
+  .setting select option {
+    padding: 12px;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #130e0e;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* Style the selected option */
+  .setting select option:checked {
+    background-color: #080707; /* Blue color for selected option */
+    color: #fff;
+  }
+
+  /* Style the dropdown arrow icon */
+  .setting select::-ms-expand {
+    display: none; /* Hide default arrow icon in Microsoft browsers */
+  }
+
+
+  /* CSS for the message */
+  .message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #f31212; /* Blue color */
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s;
+  }
+
+  /* Show the message */
+  .message.show {
+    opacity: 1;
+  }
+
+  /* Dark mode styles */
+  body.dark-mode {
+    background-color: #e7e5e5;
+    color: #fff;
+  }
+
+  .setting.dark-mode {
+    background-color: #222;
+  }
+
+  .setting-heading.dark-mode {
+    color: #0a0707;
+  }
+
+  .message.dark-mode {
+    background-color: #444;
+  }
+
+  .footer.dark-mode{
+    background-color: #1b1313;
+    color: #f1f1f1;
+  }
+
+  /* Footer styles */
+  .footer {
+    text-align: center;
+    padding: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+  }
+
+  .version-info {
+    font-size: 14px;
+    color: #e71616;
+    margin-bottom: 5px;
+  }
+  .copy {
+    font-size: 14px;
+    color: #141313;
+    margin-bottom: 5px;
+  }
+
+
+  /* Responsive styles for mobile */
+@media (max-width: 480px) {
+    .setting-heading h2 {
+      font-size: 25px;
+    }
+   .container {
+     max-width: 300px;
+  
+    }
+    .version-info,.copy {
+        padding-top: 10px;
+        font-size: 12px;
+    }
+   
+    .setting label {
+      font-size: 13px;
+    }
+  
+    .toggle-btn {
+      width: 30px;
+      height: 15px;
+    }
+  
+    .toggle-btn label::after {
+      top: 1px;
+      left: 1px;
+      width: 13px;
+      height: 13px;
+    }
+  
+    .setting select {
+      padding: 6px;
+      font-size: 12px;
+    }
+  }
